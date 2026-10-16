@@ -3,88 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Letras de Gurabo</title>
+    <title>Letras de Gurabo | Biblioteca comunitaria</title>
+    <link rel="stylesheet" href="./css/global-style.css">
   </head>
   <body>
     <header>
-      <h1>Letras de Gurabo</h1>
-      <nav>
-        <ul>
-          <li><a href="./paginas/catalogo/catalogo.html">Catalogo</a></li>
-          <li><a href="./paginas/salas_horarios/salas_horarios.html">Salas &amp; Horarios</a></li>
-          <li><a href="#actividades">Actividades</a></li>
-          <li><a href="./paginas/hacerse_socio/hacerse_socio.html">Hacerse Socio</a></li>
-          <li><a href="./paginas/contacto/contacto.html">Contacto</a></li>
+        <!-- Logo de la pagina -->
+        <a href="./index.html">
+            <img src="./img/libreria.png" alt="logo de la nuestra libreria">
+        </a>
+        <!-- Navegacion principal -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./paginas/catalogo/catalogo.html">Catalogo</a>
+                </li>
+                <li>
+                    <a href="./paginas/salas_horarios/salas_horarios.html">Salas &amp; Horarios</a>
+                </li>
+                <li>
+                    <a href="../actividades/actividades.html">Actividades</a>
+                </li>
+                <li>
+                    <a href="./paginas/hacerse_socio/hacerse_socio.html">Hacerse Socio</a>
+                </li>
+                <li>
+                    <a href="./paginas/contacto/contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="busqueda" src="./img/" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="inicio-sesion" href="#">Iniciar sesion</a>
+                </li>
+                <li>
+                    <a class="crear-cuenta" href="#">Crear cuenta</a>
+                </li>
         </ul>
+
       </nav>
     </header>
-    <main>
-      <section>
-        <h2>Bienvenidos a Letras de Gurabo</h2>
+        <!-- Contendio principal de la pagina -->
+        <main class="main">
+            <section class="seccion-principal" style="background-color: #F3F1E8;">
+                <article class="container">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">lectura</a>
+                            </li>
+                            <li>
+                                <a href="#">comunidad</a>
+                            </li>
+                            <li>
+                                <a href="#">Actividades</a>
+                            </li>
+                        </ul>
+                    </nav>
+                
+                    <h1 class="titulo-principal">Letras de Gurabo</h1>
+                    <p>Una biblioteca comunitaria para todos.</p>
+                    <p>
+                        Creemos en el poder de la lectura para construir una mejor comunidad. <br>
+                        Aqui encontraras libros, actividades y un espacio para aprender, <br>
+                        compartir y crecer juntos.
+                    </p>
 
-        <p>
-          Letras de Gurabo es una biblioteca comunitaria al servicio de nuestra
-          comunidad.
-        </p>
-      </section>
-      <hr/>
-      <section>
-        <h2>Prestamo gratuito</h2>
+                    <a href="#" class="button">Explorar catalogo</a>
+                <!-- Imagen principal -->
+                </article>
+                
+                <article class="container-image">
+                    <figure>
+                    <img src="./img/Todas-las-bibliotecas-son-bellas-por-el-servicio-que-ofrecen-a-sus-comunidades.jpg" alt="imagen de libreria">
+                
+                    </figure>
+                </article>
+                
+            </section>
+            <!-- Servicios que ofrecemos -->
+            <section class="servicios">
+                <header class="encabezado-servicios">
+                    <h2 class="titulo-servicio">Nuestros servicios</h2>
+                    <p>Todo lo que ofrecemos para ti y la comunidad</p>
+                </header>
+                <!-- servicio 1 -->
+                <article>
+                    <img src="./img/icono_libro.png" alt="icono de libro">
+                    <h3>Prestamos gratuitos</h3>
+                    <p>Accede a cientos de libros sin costo.</p>
+                </article>
+                <!-- servicio 2 -->
+                <article>
+                    <img src="./img//icono_busqueda.png" alt="icono de lupa de busqueda">
+                    <h3>Catalogo</h3>
+                    <p>Explora nuestra coleccion de libros en diferentes categorias.</p>
+                </article>
+                <!-- servicio  3 -->
+                 <article>
+                    <img src="./img/iconoactividades.png" alt="icono varias personas">
+                    <h3>Actividades</h3>
+                    <p>Participa en talleres, lecturas y eventos para toda la familia.</p>
+                </article>
+                <!-- servicio 3 -->
+                 <article>
+                    <img src="./img/icono_usuario.png" alt="icono de usuario">
+                    <h3>Hacerse Socio</h3>
+                    <p>Formar parte de nuestra comunidad y disfrutar de todos los beneficios.</p>
+                 </article>
+            </section>
+            <!-- seccion actividades destacadas -->
+             <section>
+                <!-- encabezado de la seccion de actividades destacadas -->
+                <header>
+                    <h2>Actividades destacadas</h2>
+                    <a href="#">ver todas las actividades</a>
+                </header>
+                <!-- Actividad 1 -->
+                <article>
+                    <figure>
+                        <img src="./img/libroabierto.png" alt="imagen de un libro">
+                        <figcaption>
+                            Club de lectura
+                        </figcaption>
+                    </figure>
+                    <p>Un espacio para compartir ideas y descubrir nuevos libros.</p>
+                </article>
+                <!-- Actividad 2 -->
+                 <article>
+                    <figure>
+                        <img src="./img/ninosleyendo.png" alt="imagen de niños leyendo">
+                        <figcaption>
+                            Lecturas infantiles
+                        </figcaption>
+                    </figure>
+                    <p>Fomentando el amor por la lectura desde pequeños.</p>
+                 </article>
+                 <!-- Actividad 3 -->
+                  <article>
+                    <figure>
+                        <img src="./img/librosagrupados.png" alt="Libros agrupados">
+                        <figcaption>
+                            Actividades culturales
+                        </figcaption>
+                    </figure>
+                    <p>Actividades para aprender y crear en comunidad.</p>
+                  </article>
+             </section>
+             <section>
+                <article>
+                    <figure>
+                        <img src="./img/icono_libro.png" alt="icono de libro">
+                        <figcaption>
+                            La lectura nos une
+                        </figcaption>
+                    </figure>
+                    <p>Se parte de Letras de Gurabo y contruye a una comunidad mas fuerte.</p>
+                    <a href="#">Hacerte socio</a>
+                </article>
+             </section>
+        </main>
+        <!-- Informacion adicional -->
+        <aside class="aside">
+            <h2>Que puedes encontrar en Letras de Gurabo?</h2>
 
-        <p>
-          La biblioteca ofrece el prestamo gratuito de libros para facilitar el
-          acceso a la lectura.
-        </p>
-      </section>
-      <hr/>
-      <section>
-        <h2>Explora nuestro catalogo</h2>
-
-        <p>
-          Consulta los libros disponibles y encuentra lecturas de diferentes
-          categorias.
-        </p>
-
-        <a href="./paginas/catalogo/catalogo.html">Ver catalogo</a>
-      </section>
-      <hr/>
-      <section id="actividades">
-        <h2>Actividades para la comunidad</h2>
-
-        <p>
-          La biblioteca organiza actividades y lecturas infantiles para motivar
-          a las personas a la lectura y la participación de la comunidad.
-        </p>
-
-        <a href="./paginas/actividades/actividades.html">Ver actividades</a>
-      </section>
-      <hr/>
-      <section>
-        <h2>Hacerse socio</h2>
-
-        <p>
-          Las personas interesadas pueden consultar la informacion necesaria
-          para formar parte de la biblioteca.
-        </p>
-
-        <a href="./paginas/hacerse_socio/hacerse_socio.html">Hacerse socio</a>
-      </section>
-
-      <aside>
-        <h2>Que puedes encontrar en Letras de Gurabo</h2>
-
-        <ul>
-          <li>Libros disponibles para prestamo gratuito.</li>
-          <li>Actividades para la comunidad.</li>
-          <li>Lecturas infantiles.</li>
-          <li>Informacion para hacerse socio.</li>
-        </ul>
-      </aside>
-    </main>
-    <hr/>
-    <footer>
-      <p>&copy; 2026 Letras de Gurabo</p>
-      <a href="https://web.facebook.com/?_rdc=1&_rdr#"><img src="./img/pngwing.com.png" alt="Icono de facebook" width="50" height="50"></a>
-    </footer>
+            <ul>
+                <li>
+                    <img src="./img/icono_libro.png" alt="Icono libro">
+                    Libros para prestamos gratuitos.
+                </li>
+                <li>
+                    <img src="./img/iconoactividades.png" alt="icono actividades">
+                    Actividades para la comunidad
+                </li>
+                <li>
+                    <img src="./img/iconoactividades.png" alt="Icono actividade">
+                    Lecturas infantiles.
+                </li>
+                <li>
+                    <img src="./img/icono_edificio.png" alt="icono de sala de estudio">
+                    Salas de estudios
+                </li>
+                <li>
+                    <img src="./img/icono_edificio.png" alt="">
+                </li>
+            </ul>
+        </aside>
+        <footer>
+            <!-- Logo de la pagina -->
+            <div class="navegacion-secundaria"></div>
+            <a href="./index.html">
+                <img src="./img/logo-png-letras-de-gurabo.png" alt="logo de la nuestra libreria">
+            </a>
+            <!-- Navegacion secundaria de la pagina -->
+             
+                <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Inicio</a></li>
+                    <li>
+                        <a href="./paginas/catalogo/catalogo.html">Catalogo</a>
+                    </li>
+                    <li>
+                        <a href="./paginas/salas_horarios/salas_horarios.html">Salas &amp; Horarios</a>
+                    </li>
+                    <li>
+                        <a href="#actividades">Actividades</a>
+                    </li>
+                    <li>
+                        <a href="./paginas/hacerse_socio/hacerse_socio.html">Hacerse Socio</a>
+                    </li>
+                    <li>
+                        <a href="./paginas/contacto/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+             </div>
+             <div class="iconos-redes-sociales">
+                <img src="./img/iconoinstagram" alt="icono instagram">
+                <img src="./img/img/iconofacebook.png" alt="icono facebook">
+             </div>
+            
+            <p>©2026 Letras de Gurabo</p>
+            <p>La lectura construya comunidad</p>
+        </footer>
   </body>
 </html>

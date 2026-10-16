@@ -1,167 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo</title>
+    <link rel="stylesheet" href="../../css/global-style.css">
 </head>
+
 <body>
     <header>
-        <h1>Letras de gurabos</h1>
+        <!-- Logo de la pagina -->
+        <a href="../../index.html">
+            <img src="../../img/icono-principal.png" alt="logo de la nuestra libreria">
+        </a>
+        <!-- Navegacion principal -->
         <nav>
             <ul>
-                <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="../catalogo/catalogo.html">Catalogo</a></li>
-                <li><a href="../salas_horarios/salas_horarios.html">Salas y Horarios</a></li>
-                <li><a href="../actividades/actividades.html">Actividades</a></li>
-                <li><a href="../hacerse_socio/hacerse_socio.html">Hacerse Socio</a></li>
-                <li><a href="../contacto/contacto.html">Contacto</a></li>
+                <li>
+                    <a href="../../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../catalogo/catalogo.html">Catalogo</a>
+                </li>
+                <li>
+                    <a href="../salas_horarios/salas_horarios.html">Salas &amp; Horarios</a>
+                </li>
+                <li>
+                    <a href="../actividades/actividades.html">Actividades</a>
+                </li>
+                <li>
+                    <a href="../hacerse_socio/hacerse_socio.html">Hacerse Socio</a>
+                </li>
+                <li>
+                    <a href="../contacto/contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a class="inicio-sesion" href="#">Iniciar sesion</a>
+                </li>
+                <li>
+                    <a class="crear-cuenta" href="#">Crear cuenta</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Catalogo de lectura</h2>
-            <p>Explora nuestra biblioteca de libros disponibles</p>
-            <input type="search"  placeholder="buscar por titulo o autor o palabra clave ">
-            <button>buscar</button> <br>
-            <img src="#" alt="imagen de libros sobre la mesa">
-    
+    <main class="main">
+        <section class="seccion-principal">
+            <article>
+                <h1>Catalogo de libros</h1>
+                <p>Explora nuestra coleccion y encuentra tu proxima lectura.</p>
+                <input type="text" placeholder="buscar por titulo, autor o palabra clave">
+                <button class="button">Buscar</button>
+            </article>
+            <article class="container-image">
+                <figure>
+                    <img src="../../img/libros-biblioteca.png" alt="">
+                </figure>
+            </article>
         </section>
-        <hr>
         <section>
-            <h2>filtrar por categoria:</h2>
+            <h2>Filtrar por categorias:</h2>
             <ul>
-                <li>Todo</li>
-                <li>Novela</li>
-                <li>Arte</li>
-                <li>Infantil</li>
-                <li>ciencia</li>
-                <li>Historia</li>
-                <li>Tecnologia</li>
-            </ul><br>
+                <li><a href="#">Todo</a></li>
+                <li><a href="#">Novelas</a></li>
+                <li><a href="#">Ciencia</a></li>
+                <li><a href="#">Historias</a></li>
+                <li><a href="#">infantil</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Arte</a></li>
+            </ul>
+            <h3>Ordenar por:</h3>
+            <select name="ordenar" id="ordenar">
+                <optgroup label="Fecha">
+                    <option value="recientes">Mas recientes</option>
+                    <option value="antiguos">Mas antiguos</option>
+                </optgroup>
+                <optgroup label="Nombre">
+                    <option value="az">A - Z</option>
+                    <option value="za">Z - A</option>
+                </optgroup>
+            </select>
+        </section>
+        <section class="libros">
             <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="#" alt="imagen del libro"><br><br>
-                            <b>Titulo libro</b><br>
-                            <p>Autor libro</p><br>
-                            <p>categoria del libro</p><br>
-                            <ul>
-                                <li>Estado del libro</li>
-                            </ul><br>
-                            <button>Ver detalles</button>
-                        </td>
-                        <td>
-                            <img src="#" alt="imagen del libro"><br><br>
-                            <b>Titulo libro</b><br>
-                            <p>Autor libro</p><br>
-                            <p>categoria del libro</p><br>
-                            <ul>
-                                <li>Estado del libro</li>
-                            </ul><br>
-                            <button>Ver detalles</button>
-                        </td>
-                        <td>
-                            <img src="#" alt="imagen del libro"><br><br>
-                            <b>Titulo libro</b><br>
-                            <p>Autor libro</p><br>
-                            <p>categoria del libro</p><br>
-                            <ul>
-                                <li>Estado del libro</li>
-                            </ul><br>
-                            <button>Ver detalles</button>
-                        </td>
-                        <td>
-                            <img src="#" alt="imagen del libro"><br><br>
-                            <b>Titulo libro</b><br>
-                            <p>Autor libro</p><br>
-                            <p>categoria del libro</p><br>
-                            <ul>
-                                <li>Estado del libro</li>
-                            </ul><br>
-                            <button>Ver detalles</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="#" alt="imagen del libro"><br><br>
-                            <b>Titulo libro</b><br>
-                            <p>Autor libro</p><br>
-                            <p>categoria del libro</p><br>
-                            <ul>
-                                <li>Estado del libro</li>
-                            </ul><br>
-                            <button>Ver detalles</button>
-                        </td>
-                        <td>
-                            <img src="#" alt="imagen del libro"><br><br>
-                            <b>Titulo libro</b><br>
-                            <p>Autor libro</p><br>
-                            <p>categoria del libro</p><br>
-                            <ul>
-                                <li>Estado del libro</li>
-                            </ul><br>
-                            <button>Ver detalles</button>
-                        </td>
-                        <td>
-                            <img src="#" alt="imagen del libro"><br><br>
-                            <b>Titulo libro</b><br>
-                            <p>Autor libro</p><br>
-                            <p>categoria del libro</p><br>
-                            <ul>
-                                <li>Estado del libro</li>
-                            </ul><br>
-                            <button>Ver detalles</button>
-                        </td>
-                        <td>
-                            <img src="#" alt="imagen del libro"><br><br>
-                            <b>Titulo libro</b><br>
-                            <p>Autor libro</p><br>
-                            <p>categoria del libro</p><br>
-                            <ul>
-                                <li>Estado del libro</li>
-                            </ul><br>
-                            <button>Ver detalles</button>
-                        </td>
-                    </tr>
+                <tr>
+                    <td>
+                        <figure>
+                            <img src="../../img/portada habitos atomicos.png" alt="Portada de Hábitos atómicos"
+                                width="350px">
+                        </figure>
 
-                </tbody>
+                        <h3>Habitos atomicos</h3>
+                        <p>James Clear</p>
+
+                        <span>Desarrollo personal</span>
+
+                        <p>● Disponible</p>
+
+                        <a href="#">Ver detalle</a>
+                    </td>
+
+                    <td>
+                        <figure>
+                            <img src="../../img/portada_el-principito_antoine-de-saint-exupery_201703281853.webp"
+                                alt="Portada de El principito" width="250px">
+                        </figure>
+
+
+                        <h3>El principito</h3>
+                        <p>Antoine de Saint-Exupery</p>
+
+                        <span>Infantil</span>
+
+                        <p>● Disponible</p>
+
+                        <a href="#">Ver detalle</a>
+                    </td>
+
+                    <td>
+                        <img src="../../img/portadacienaniosoledad.png" alt="Portada de Cien años de soledad"
+                            width="250px">
+
+                        <h3>Cien años de soledad</h3>
+                        <p>Gabriel Garcia Marquez</p>
+
+                        <span>Novela</span>
+
+                        <p>● Disponible</p>
+
+                        <a href="#">Ver detalle</a>
+                    </td>
+
+                    <td>
+                        <img src="../../img/codigolimpio.jpg" alt="Portada de Código limpio" width="280px">
+
+                        <h3>Codigo limpio</h3>
+                        <p>Robert C. Martin</p>
+
+                        <span>Tecnologia</span>
+
+                        <p>● Disponible</p>
+
+                        <a href="#">Ver detalle</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="../../img/9788419399717.avif" alt="Portada de Sapiens" width="250px">
+
+                        <h3>Sapiens</h3>
+                        <p>Yuval Noah Harari</p>
+
+                        <span>Historia</span>
+
+                        <p>● Disponible</p>
+
+                        <a href="#">Ver detalle</a>
+                    </td>
+
+                    <td>
+                        <img src="../../img/donquijote.webp" alt="Portada de Don Quijote de la Mancha" width="250px">
+
+                        <h3>Don Quijote de la Mancha</h3>
+                        <p>Miguel de Cervantes</p>
+
+                        <span>Clasico</span>
+
+                        <p>● Disponible</p>
+
+                        <a href="#">Ver detalle</a>
+                    </td>
+
+                    <td>
+                        <img src="../../img/7656903c-0976-455c-bc2f-b983f1c9479a.8392ff3d085c5bfff1a15976bc3d388a.avif"
+                            alt="Portada de El hobbit" width="250px">
+
+                        <h3>El hobbit</h3>
+                        <p>J.R.R. Tolkien</p>
+
+                        <span>Fantasia</span>
+
+                        <p>● No disponible</p>
+
+                        <a href="#">Ver detalle</a>
+                    </td>
+
+                    <td>
+                        <img src="../../img/elartedelagerra.jpg" alt="Portada de El arte de la guerra" width="250px">
+
+                        <h3>El arte de la guerra</h3>
+                        <p>Sun Tzu</p>
+
+                        <span>Estrategia</span>
+
+                        <p>● Disponible</p>
+
+                        <a href="#">Ver detalle</a>
+                    </td>
+                </tr>
             </table>
         </section>
-        <hr>
     </main>
-    <hr>
     <aside>
-        <article>
-            <h2>categorias</h2>
-            <ul>
-                <li>Novela</li>
-                <li>Arte</li>
-                <li>Infantil</li>
-                <li>Ciencia</li>
-                <li>Historia</li>
-                <li>Tecnologia</li>
-                <li>Estrategia</li>
-                <li>Clasico</li>
-                <li>Desarrollo personal</li>
-                <li>Fantacia</li>
-            </ul>
-        </article>
-        <article>
-            <h3>El Prestamo es gratuito</h3>
-            <p>
-                En letras de gurabo creemos<br>
-                en el acceso libre al conocimiento<br>
-                para toda la comunidad.
-            </p>
-            <button>Haste socio</button>
-        </article>
+        
     </aside>
     <footer>
-      <p>&copy; 2026 Letras de Gurabo</p>
-      <a href="https://web.facebook.com/?_rdc=1&_rdr#"><img src="../../img/pngwing.com.png" alt="Icono de facebook" width="50" height="50"></a>
+        <!-- Logo de la pagina -->
+        <div class="navegacion-secundaria"></div>
+        <a href="./index.html">
+            <img src="./img/logo-png-letras-de-gurabo.png" alt="logo de la nuestra libreria">
+        </a>
+        <!-- Navegacion secundaria de la pagina -->
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./paginas/catalogo/catalogo.html">Catalogo</a>
+                </li>
+                <li>
+                    <a href="./paginas/salas_horarios/salas_horarios.html">Salas &amp; Horarios</a>
+                </li>
+                <li>
+                    <a href="#actividades">Actividades</a>
+                </li>
+                <li>
+                    <a href="./paginas/hacerse_socio/hacerse_socio.html">Hacerse Socio</a>
+                </li>
+                <li>
+                    <a href="./paginas/contacto/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <div class="iconos-redes-sociales">
+            <img src="./img/iconoinstagram" alt="icono instagram">
+            <img src="./img/img/iconofacebook.png" alt="icono facebook">
+        </div>
+
+        <p>©2026 Letras de Gurabo</p>
+        <p>La lectura construya comunidad</p>
     </footer>
 </body>
+
 </html>
