@@ -1,0 +1,369 @@
+/* ========================================
+   LETRAS DE GURABO — ESTILOS GENERALES
+======================================== */
+
+:root {
+    --verde-oscuro: #0f5132;
+    --verde-claro: #198754;
+    --blanco: #f8f8f8;
+    --azul-oscuro: #1f2937;
+    --color-crema: #f3f1e8;
+    --borde: #e5e0d2;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-width: 320px;
+    font-family: "Inter", sans-serif;
+    color: var(--azul-oscuro);
+    overflow-wrap: break-word;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+p {
+    overflow-wrap: break-word;
+}
+
+p {
+    line-height: 1.6;
+}
+
+button,
+a {
+    touch-action: manipulation;
+}
+
+
+
+.encabezado-principal {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 3%;
+    background-color: var(--blanco);
+}
+
+.logo-principal {
+    flex: 0 1 230px;
+    min-width: 0;
+}
+
+.logo-principal img {
+    width: 230px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.navegacion-principal {
+    min-width: 0;
+}
+
+.navegacion-principal ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacion-principal a {
+    display: inline-block;
+    color: var(--azul-oscuro);
+    font-family: Georgia, serif;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.navegacion-principal a:not(.inicio-sesion):not(.crear-cuenta):not(.enlace-busqueda):hover {
+    color: var(--verde-oscuro);
+    border-bottom-color: var(--verde-oscuro);
+}
+
+.navegacion-principal .busqueda {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.navegacion-principal .enlace-busqueda {
+    border-bottom: 0;
+}
+
+.navegacion-principal .inicio-sesion,
+.navegacion-principal .crear-cuenta {
+    padding: 10px 14px;
+    border: 2px solid var(--verde-oscuro);
+    border-radius: 6px;
+    color: var(--verde-oscuro);
+    font-family: "Inter", sans-serif;
+    transition: color 0.3s ease,
+                background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.navegacion-principal .inicio-sesion:hover,
+.navegacion-principal .crear-cuenta:hover {
+    color: white;
+    background-color: var(--verde-oscuro);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+/* 10. FOOTER */
+
+.footer {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    padding: 40px 4% 20px;
+
+    color: var(--blanco);
+    background-color: var(--verde-oscuro);
+
+    border-top: 3px solid var(--verde-claro);
+
+    font-family: "Inria Serif", Georgia, serif;
+}
+
+.footer-contenido {
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.9fr 0.9fr 1fr;
+
+    gap: 36px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding-bottom: 32px;
+}
+
+.footer-identidad,
+.footer-columna {
+    min-width: 0;
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.footer-logo img {
+    width: 220px;
+    height: 70px;
+
+    object-fit: contain;
+    object-position: left center;
+}
+
+.footer-descripcion {
+    max-width: 300px;
+
+    margin: 18px 0 20px;
+
+    color: var(--blanco);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Redes sociales */
+
+.iconos-redes-sociales {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.iconos-redes-sociales a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    transition: transform var(--transicion);
+}
+
+.iconos-redes-sociales a:hover {
+    transform: translateY(-4px);
+}
+
+.iconos-redes-sociales img {
+    width: 27px;
+    height: 27px;
+
+    object-fit: contain;
+}
+
+/* Columnas */
+
+.footer-columna h3 {
+    margin: 4px 0 18px;
+
+    color: var(--blanco);
+    font-family: "Inter", Arial, sans-serif;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer-columna ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.footer-columna li {
+    margin-bottom: 11px;
+}
+
+.footer-columna a,
+.footer-legal a {
+    color: var(--blanco);
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    text-decoration: none;
+    overflow-wrap: anywhere;
+
+    transition: color var(--transicion);
+}
+
+.footer-columna a:hover,
+.footer-legal a:hover {
+    color: #d7e8d9;
+    text-decoration: underline;
+}
+
+/* Contacto */
+
+.footer-contacto address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 9px;
+
+    font-style: normal;
+}
+
+.footer-contacto address p {
+    margin: 0;
+
+    color: var(--blanco);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.footer-contacto address a {
+    color: var(--blanco);
+    font-size: 0.85rem;
+
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.footer-contacto address a:hover {
+    color: #d7e8d9;
+    text-decoration: underline;
+}
+
+/* Parte inferior */
+
+.footer-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 12px 24px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgb(248 248 248 / 45%);
+}
+
+.footer-inferior > p {
+    margin: 0;
+
+    color: var(--blanco);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.footer-legal a {
+    font-size: 0.8rem;
+}
+
+.footer-legal span {
+    color: var(--blanco);
+}
+
+/* 11. AVISO NOSCRIPT */
+
+.aviso-noscript {
+    grid-column: 1 / -1;
+
+    margin: 0;
+    padding: 16px;
+
+    color: var(--azul-oscuro);
+    background-color: var(--color-crema);
+
+    line-height: 1.6;
+}
