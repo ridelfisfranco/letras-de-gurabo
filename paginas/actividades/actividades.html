@@ -1,79 +1,171 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Actividades</title>
-    <link rel="stylesheet" href="../../css/global-style.css">
+    <link rel="stylesheet" href="../../assets/css/actividades.css" />
   </head>
   <body>
-    <header>
-        <!-- Logo de la pagina -->
-        <a href="../../index.html">
-            <img src="../../img/icono-principal.png" alt="logo de la nuestra libreria">
-        </a>
-        <!-- Navegacion principal -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="../../index.html">Inicio</a></li>
-                <li>
-                    <a href="../catalogo/catalogo.html">Catalogo</a>
-                </li>
-                <li>
-                    <a href="../salas_horarios/salas_horarios.html">Salas &amp; Horarios</a>
-                </li>
-                <li>
-                    <a href="#actividades">Actividades</a>
-                </li>
-                <li>
-                    <a href="../hacerse_socio/hacerse_socio.html">Hacerse Socio</a>
-                </li>
-                <li>
-                    <a href="../contacto/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a class="inicio-sesion" href="#">Iniciar sesion</a>
-                </li>
-                <li>
-                    <a class="crear-cuenta" href="#">Crear cuenta</a>
-                </li>
+    <header class="encabezado-principal">
+      <a href="../index.html" class="logo-principal">
+        <img
+          src="../../assets/img/Letras de Gurabo_ Biblioteca Comunitaria.png"
+          alt="Logo de Letras de Gurabo"
+        />
+      </a>
+
+      <nav class="navegacion-principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./catalogo.html">Catalogo</a></li>
+          <li>
+            <a href="../salas_horarios/salas_horarios.html">Salas y horarios</a>
+          </li>
+          <li><a href="../actividades/actividades.html">Actividades</a></li>
+          <li>
+            <a href="../hacerse_socio/hacerse_socio.html">Hacerse socio</a>
+          </li>
+          <li><a href="../contacto/contacto.html">Contacto</a></li>
+          <li>
+            <a href="#" class="enlace-busqueda">
+              <img
+                class="busqueda"
+                src="../../assets/img/Ícono de lupa verde sobre transparente.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li><a class="inicio-sesion" href="#">Iniciar sesion</a></li>
+          <li><a class="crear-cuenta" href="#">Crear cuenta</a></li>
         </ul>
       </nav>
     </header>
-    <br><br>
-    <hr>
-    <main class="main"> 
-        <section class="seccion-principal">
-            <div class="container">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">COMUNIDAD</a>
-                        </li>
-                        <li>
-                            <a href="#">APRENDIZAJE</a>
-                        </li>
-                        <li>
-                            <a href="#">CULTURA</a>
-                        </li>
-                    </ul>
-                </nav>
-                
-                <h1 class="titulo-principal">Actividades</h1>
-                <p>Participa aprende y comparte.</p>
-                <p>
-                    En letras de Gurabo organizamos actividades para todas las edades.
-                    talleres, lecturas, charlas y eventos especiales que fomentan la 
-                    participacion de nuestra comunidad.
-                </p>
-            </div>
-            <div class="container-image">
-                <figure>
-                    <img src="../../img/imagen-actividades.png" alt="">
-                </figure>
-            </div>
-        </section>
+    <main>
+      <!-- Presentación principal -->
+      <section class="seccion-principal">
+        <div class="presentacion">
+          <ul class="enlaces-presentacion">
+            <li><a href="#">comunidad</a></li>
+            <li><a href="#">aprendizaje</a></li>
+            <li><a href="#actividades">cultura</a></li>
+          </ul>
+
+          <h1 class="titulo-principal">Actividades</h1>
+          <p id="saludo"></p>
+          <p class="subtitulo-principal">Participa, aprende y comparte.</p>
+
+          <p class="descripcion-principal">
+            En Letras de Gurabo organizamos actividades para todas las eddes.
+            Talleres, lecturas, charlas y eventos especiales que fomentan la
+            lectura y la participacion de nuestra comunidad.
+          </p>
+        </div>
+
+        <div class="imagen-principal">
+          <img
+            src="../../assets/img/Cuentos que construyen comunidad.png"
+            alt="Interior de una biblioteca moderna"
+          />
+        </div>
+      </section>
+      <section class="filtros_busqueda">
+        <ul>
+          <li><a href="#">Todas</a></li>
+          <li><a href="#">infantiles</a></li>
+          <li><a href="#">Talleres</a></li>
+          <li><a href="#">charlas</a></li>
+          <li><a href="#">Club de lectura</a></li>
+          <li><a href="#">Eventos especiales</a></li>
+        </ul>
+      </section>
+      <section class="seccion-actividades">
+        <div>
+          <h2>Proximas Actividades</h2>
+          <p>Descubre lo que tenemos para ti.</p>
+        </div>
+      </section>
     </main>
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-identidad">
+                <a href="./index.html" class="footer-logo">
+                    <img
+                        src="../assets/img/Letras de Gurabo_ Biblioteca Comunitaria.png"
+                        alt="Letras de Gurabo"
+                    >
+                </a>
+
+                <p class="footer-descripcion">
+                    Un espacio para aprender, descubrir y crecer juntos
+                    en nuestra comunidad.
+                </p>
+
+                <div class="iconos-redes-sociales">
+                    <a href="#">
+                        <img src="../assets/img/Ícono de Facebook con Degradado Azul.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/img/Ícono de Instagram en degradado vibrante.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <nav class="footer-columna">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./paginas/catalogo/catalogo.html">Catálogo</a></li>
+                    <li><a href="./paginas/salas_horarios/salas_horarios.html">Salas y horarios</a></li>
+                    <li><a href="./paginas/actividades/actividades.html">Actividades</a></li>
+                    <li><a href="./paginas/hacerse_socio/hacerse_socio.html">Hacerse socio</a></li>
+                    <li><a href="./paginas/contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-columna">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="./paginas/catalogo/catalogo.html">Préstamos de libros</a></li>
+                    <li><a href="./paginas/salas_horarios/salas_horarios.html">Reserva de salas</a></li>
+                    <li><a href="./paginas/actividades/actividades.html">Actividades culturales</a></li>
+                    <li><a href="./paginas/catalogo/catalogo.html">Catálogo de libros</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-columna footer-contacto">
+                <h3>Contacto</h3>
+                <address>
+                    <p>Calle principal #00</p>
+                    <p>Gurabo, Santiago, R. D.</p>
+                    <a href="tel:+18090000000">(809) 000-0000</a>
+                    <a href="mailto:biblioteca@letrasdegurabo.com">
+                        biblioteca@letrasdegurabo.com
+                    </a>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-inferior">
+            <p>© 2026 Letras de Gurabo. Todos los derechos reservados.</p>
+            <div class="footer-legal">
+                <a href="#">Términos y condiciones</a>
+                <span>|</span>
+                <a href="#">Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <noscript>
+        <p class="aviso-noscript">
+            JavaScript está desactivado. El saludo personalizado y algunas
+            funciones interactivas podrían no funcionar. Puedes seguir
+            consultando el contenido disponible de Letras de Gurabo.
+            Activa JavaScript para disfrutar de todas las funcionalidades.
+        </p>
+    </noscript>
+
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>
