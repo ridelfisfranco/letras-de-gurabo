@@ -1,84 +1,80 @@
-/* ========================================
-   LETRAS DE GURABO — ESTILOS GENERALES
-======================================== */
+
+/* =========================================
+   LETRAS DE GURABO
+   SALAS Y HORARIOS
+========================================= */
+
 
 :root {
     --verde-oscuro: #0f5132;
     --verde-claro: #198754;
     --blanco: #f8f8f8;
     --azul-oscuro: #1f2937;
+    --gris: #858b96;
     --color-crema: #f3f1e8;
-    --borde: #e5e0d2;
+    --borde: #c5c9ce;
 }
 
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    margin: 0;
     width: 100%;
     min-width: 320px;
-    font-family: "Inter", sans-serif;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
     color: var(--azul-oscuro);
-    overflow-wrap: break-word;
+    background-color: white;
 }
 
 img {
-    display: block;
     max-width: 100%;
-    height: auto;
 }
 
 a {
-    -webkit-tap-highlight-color: transparent;
-}
-
-h1,
-h2,
-h3,
-p {
-    overflow-wrap: break-word;
-}
-
-p {
-    line-height: 1.6;
-}
-
-button,
-a {
-    touch-action: manipulation;
+    color: inherit;
 }
 
 
+/* =========================================
+   2. ENCABEZADO PRINCIPAL
+========================================= */
 
 .encabezado-principal {
     width: 100%;
-    min-width: 0;
+    min-height: 60px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 24px;
-    padding: 16px 3%;
+
+    gap: 20px;
+    padding: 6px 2%;
+
     background-color: var(--blanco);
 }
 
+
+/* LOGOTIPO */
+
 .logo-principal {
-    flex: 0 1 230px;
+    flex: 0 1 210px;
     min-width: 0;
+    display: flex;
+    align-items: center;
 }
 
 .logo-principal img {
-    width: 230px;
+    display: block;
+    width: 210px;
     max-width: 100%;
+    height: 45px;
     object-fit: contain;
 }
+
+
+/* NAVEGACIÓN */
 
 .navegacion-principal {
     min-width: 0;
@@ -140,39 +136,561 @@ a {
 }
 
 
+/* =========================================
+   3. BANNER PRINCIPAL
+========================================= */
+
+.seccion-principal {
+    width: 100%;
+    min-height: 115px;
+
+    display: grid;
+    grid-template-columns: 2.1fr 1fr;
+
+    background-color: var(--verde-oscuro);
+    color: white;
+}
 
 
+/* TEXTO DEL BANNER */
+
+.contenido-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10px 30px;
+}
+
+.contenido-principal h1 {
+    margin: 0 0 5px;
+
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.contenido-principal p {
+    max-width: 500px;
+
+    margin: 4px 0;
+
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.contenido-principal .subtitulo-principal {
+    font-size: 14px;
+}
 
 
+/* SALUDO JAVASCRIPT */
 
-/* 10. FOOTER */
+#saludo:empty {
+    display: none;
+}
 
-.footer {
-    grid-column: 1 / -1;
+
+/* IMAGEN DEL BANNER */
+
+.imagen-principal {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.imagen-principal img {
+    display: block;
 
     width: 100%;
+    height: 100%;
+    min-height: 115px;
 
-    padding: 40px 4% 20px;
+    object-fit: cover;
+}
 
-    color: var(--blanco);
+.imagen-principal span {
+    position: absolute;
+
+    top: 20px;
+    right: 150px;
+
+    width: 135px;
+
+    color: var(--verde-oscuro);
+    font-size: 2.5rem;
+    line-height: 1.3;
+    z-index: 1;
+}
+
+
+/* =========================================
+   4. DISTRIBUCIÓN DEL CONTENIDO
+========================================= */
+
+.main {
+    width: 100%;
+}
+
+.contenido-layout {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+
+    gap: 30px;
+
+    padding: 15px 2% 18px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   5. SECCIÓN DE SALAS
+========================================= */
+
+.seccion-salas {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* ENCABEZADO DE SALAS */
+
+.encabezado-salas {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.encabezado-salas h2 {
+    margin: 8px 0 5px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.descripcion-sala {
+    margin: 0;
+
+    color: var(--gris);
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   6. CONTENEDOR DE TARJETAS
+========================================= */
+
+.contenedor-salas {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* TARJETA INDIVIDUAL */
+
+.tarjeta-sala {
+    width: 100%;
+    min-height: 100px;
+
+    display: grid;
+
+    grid-template-columns: 145px 30px minmax(0, 1fr);
+
+    align-items: center;
+
+    column-gap: 15px;
+
+    padding: 3px 5px;
+
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+
+    background-color: white;
+}
+
+
+/* =========================================
+   7. IMÁGENES DE LAS TARJETAS
+========================================= */
+
+.tarjeta-sala .imagen-sala {
+    display: block;
+
+    width: 250px;
+    height: 85px;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+}
+
+
+/* =========================================
+   8. ICONOS DE LAS TARJETAS
+========================================= */
+
+.enlace-sala {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.enlace-sala svg {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+
+
+
+.contenido-sala {
+    width: 100%;
+}
+
+
+
+
+
+.contenido-sala h3 {
+    margin: 0 0 2px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+/* DESCRIPCIÓN */
+
+.contenido-sala p {
+    margin: 0 0 5px;
+
+    color: var(--gris);
+
+    font-size: 10px;
+    line-height: 1.25;
+}
+
+
+/* =========================================
+   10. ETIQUETAS DE LAS TARJETAS
+========================================= */
+
+.etiquetas-sala {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 4px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.etiquetas-sala li {
+    padding: 2px 6px;
+
+    border-radius: 3px;
+
+    background-color: #e5e8eb;
+
+    color: #555;
+
+    font-size: 7px;
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+
+/* ETIQUETAS DE ACTIVIDADES */
+
+.etiquetas-eventos li {
+    color: #51368d;
+    background-color: #eee5ff;
+    border: 1px solid #b79be8;
+}
+
+
+/* =========================================
+   11. PANEL LATERAL DE HORARIOS
+========================================= */
+
+.informacion-horarios {
+    width: 100%;
+    margin-top: 60px;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+/* =========================================
+   12. TARJETA DE HORARIOS
+========================================= */
+
+.tarjeta-horarios {
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 4px;
+
+    background-color: var(--color-crema);
+}
+
+
+/* TÍTULO DE HORARIOS */
+
+.tarjeta-horarios h2 {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0 0 8px;
+
+    color: #111;
+
+    font-size: 19px;
+    font-weight: normal;
+}
+
+
+/* ICONO DEL RELOJ */
+
+.icono-reloj,
+.icono-calendario,
+.libro-abierto {
+    width: 27px;
+}
+
+
+/* =========================================
+   13. TABLA DE HORARIOS
+========================================= */
+
+.tabla-horarios {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 12px;
+}
+
+.tabla-horarios td {
+    padding: 3px 2px;
+
+    border-bottom: 1px solid #d8d5cb;
+}
+
+.tabla-horarios td:first-child {
+    color: var(--azul-oscuro);
+}
+
+.tabla-horarios td:last-child {
+    text-align: right;
+
+    color: #657080;
+
+    white-space: nowrap;
+}
+
+
+/* DOMINGO CERRADO */
+
+.tabla-horarios .cerrado {
+    color: red;
+}
+
+
+/* =========================================
+   14. NOTA DE HORARIOS
+========================================= */
+
+.nota-horarios {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 8px;
+    padding-top: 8px;
+
+    border-top: 1px solid #d8d5cb;
+}
+
+.nota-horarios span {
+
+    color: var(--verde-claro);
+
+    font-size: 23px;
+}
+
+.nota-horarios p {
+    margin: 0;
+
+    color: var(--gris);
+
+    font-size: 9px;
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   15. NORMAS DE USO
+========================================= */
+
+.tarjeta-normas {
+    width: 100%;
+
+    padding: 10px 12px;
+
+    border-radius: 4px;
+
+    background-color: var(--color-crema);
+}
+
+
+/* TÍTULO DE NORMAS */
+
+.tarjeta-normas h3 {
+    margin: 0 0 8px;
+
+    color: var(--azul-oscuro);
+
+    text-align: center;
+
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.tarjeta-normas h3 span {
+    margin-right: 5px;
+    color: var(--verde-claro);
+}
+
+
+/* LISTA DE NORMAS */
+
+.tarjeta-normas ul {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.tarjeta-normas li {
+    position: relative;
+
+    padding-left: 15px;
+    margin-bottom: 3px;
+
+    color: var(--gris);
+
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+.tarjeta-normas li::before {
+    content: "●";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--verde-claro);
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   16. MENSAJE INFORMATIVO
+========================================= */
+
+.tarjeta-informacion {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 7px;
+
+    border: 1px solid #aeb5bd;
+    border-radius: 4px;
+
+    background-color: var(--color-crema);
+}
+
+.tarjeta-informacion .icono-libro {
+    flex-shrink: 0;
+}
+
+.icono-libro svg {
+    display: block;
+
+    width: 25px;
+    height: 25px;
+
+    color: var(--verde-oscuro);
+}
+
+.tarjeta-informacion h3 {
+    margin: 0 0 3px;
+
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.tarjeta-informacion p {
+    margin: 0;
+
+    color: var(--gris);
+    font-size: 10px;
+}
+
+
+.footer {
+    width: 100%;
+    padding: 40px 4% 14px;
     background-color: var(--verde-oscuro);
-
+    color: var(--blanco);
     border-top: 3px solid var(--verde-claro);
-
     font-family: "Inria Serif", Georgia, serif;
 }
 
 .footer-contenido {
     display: grid;
-
     grid-template-columns: 1.3fr 0.9fr 0.9fr 1fr;
-
     gap: 36px;
-
+    padding-bottom: 32px;
     max-width: 1400px;
     margin: 0 auto;
-
-    padding-bottom: 32px;
 }
 
 .footer-identidad,
@@ -181,49 +699,43 @@ a {
 }
 
 .footer-logo {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-
+    gap: 14px;
+    color: var(--blanco);
     text-decoration: none;
 }
 
 .footer-logo img {
-    width: 220px;
-    height: 70px;
-
+    width: 280px;
+    height: 90px;
     object-fit: contain;
-    object-position: left center;
 }
+
+
 
 .footer-descripcion {
     max-width: 300px;
-
     margin: 18px 0 20px;
-
     color: var(--blanco);
     font-size: 0.95rem;
     line-height: 1.7;
 }
 
-/* Redes sociales */
-
 .iconos-redes-sociales {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 18px;
 }
 
 .iconos-redes-sociales a {
     display: inline-flex;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
+    transition: transform 0.3s ease;
     width: 36px;
     height: 36px;
-
     border-radius: 50%;
-
-    transition: transform var(--transicion);
 }
 
 .iconos-redes-sociales a:hover {
@@ -231,27 +743,21 @@ a {
 }
 
 .iconos-redes-sociales img {
-    width: 27px;
-    height: 27px;
-
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
-/* Columnas */
-
 .footer-columna h3 {
     margin: 4px 0 18px;
-
     color: var(--blanco);
-    font-family: "Inter", Arial, sans-serif;
-
+    font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-weight: 700;
 }
 
 .footer-columna ul {
     list-style: none;
-
     margin: 0;
     padding: 0;
 }
@@ -263,14 +769,11 @@ a {
 .footer-columna a,
 .footer-legal a {
     color: var(--blanco);
-
     font-size: 0.9rem;
     line-height: 1.5;
-
     text-decoration: none;
     overflow-wrap: anywhere;
-
-    transition: color var(--transicion);
+    transition: color 0.3s ease;
 }
 
 .footer-columna a:hover,
@@ -279,60 +782,48 @@ a {
     text-decoration: underline;
 }
 
-/* Contacto */
-
 .footer-contacto address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    gap: 9px;
-
+    gap: 8px;
     font-style: normal;
 }
 
 .footer-contacto address p {
     margin: 0;
-
+    padding: 0;
     color: var(--blanco);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     line-height: 1.5;
 }
 
 .footer-contacto address a {
     color: var(--blanco);
-    font-size: 0.85rem;
-
-    text-decoration: none;
+    font-size: 0.8rem;
     overflow-wrap: anywhere;
+    text-decoration: none;
 }
 
 .footer-contacto address a:hover {
-    color: #d7e8d9;
     text-decoration: underline;
 }
 
-/* Parte inferior */
-
 .footer-inferior {
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
     gap: 12px 24px;
-
-    max-width: 1400px;
-    margin: 0 auto;
-
+    border-top: 1px solid rgb(248 248 248 / 70%);
     padding-top: 20px;
-
-    border-top: 1px solid rgb(248 248 248 / 45%);
 }
 
 .footer-inferior > p {
     margin: 0;
-
+    padding: 0;
     color: var(--blanco);
     font-size: 0.8rem;
     line-height: 1.5;
@@ -342,28 +833,21 @@ a {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
     gap: 12px;
 }
 
 .footer-legal a {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .footer-legal span {
     color: var(--blanco);
 }
 
-/* 11. AVISO NOSCRIPT */
-
 .aviso-noscript {
-    grid-column: 1 / -1;
-
     margin: 0;
     padding: 16px;
-
-    color: var(--azul-oscuro);
     background-color: var(--color-crema);
-
+    color: var(--azul-oscuro);
     line-height: 1.6;
 }

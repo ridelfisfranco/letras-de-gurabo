@@ -1,422 +1,398 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Salas y Horarios | Letras de Gurabo</title>
 
-    <link rel="stylesheet" href="../../assets/css/global-style.css">
-    <link rel="stylesheet" href="../../assets/css/salas_horarios.css">
-</head>
+    <link rel="stylesheet" href="../../assets/css/salas_horarios.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- ENCABEZADO -->
     <header class="encabezado-principal">
+      <a href="../index.html" class="logo-principal">
+        <img
+          src="../../assets/img/Letras de Gurabo_ Biblioteca Comunitaria.png"
+          alt="Logo de Letras de Gurabo"
+        />
+      </a>
 
-        <a href="../index.html" class="logo-principal">
-            <img
-                src="../../assets/img/Letras de Gurabo_ Biblioteca Comunitaria.png"
-                alt="Logo de Letras de Gurabo"
-            >
-        </a>
+      <nav class="navegacion-principal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../catalogo/catalogo.html">Catalogo</a></li>
 
-        <nav class="navegacion-principal">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../catalogo/catalogo.html">Catalogo</a></li>
-                <li><a href="../salas_horarios/salas_horarios.html">Salas y horarios</a></li>
-                <li><a href="../actividades/actividades.html">Actividades</a></li>
-                <li><a href="../hacerse_socio/hacerse_socio.html">Hacerse socio</a></li>
-                <li><a href="../contacto/contacto.html">Contacto</a></li>
+          <li>
+            <a href="../salas_horarios/salas_horarios.html" class="activo">
+              Salas y horarios
+            </a>
+          </li>
 
-                <li>
-                    <a href="#" class="enlace-busqueda">
-                        <img
-                            class="busqueda"
-                            src="../../assets/img/Ícono de lupa verde sobre transparente.png"
-                            alt=""
-                        >
-                    </a>
-                </li>
+          <li><a href="../actividades/actividades.html">Actividades</a></li>
+          <li>
+            <a href="../hacerse_socio/hacerse_socio.html">Hacerse socio</a>
+          </li>
+          <li><a href="../contacto/contacto.html">Contacto</a></li>
 
-                <li><a class="inicio-sesion" href="#">Iniciar sesion</a></li>
-                <li><a class="crear-cuenta" href="#">Crear cuenta</a></li>
-            </ul>
-        </nav>
+          <li>
+            <a href="#" class="enlace-busqueda">
+              <img
+                class="busqueda"
+                src="../../assets/img/Ícono de lupa verde sobre transparente.png"
+                alt=""
+              />
+            </a>
+          </li>
 
+          <li>
+            <a class="inicio-sesion" href="#"> Iniciar sesión </a>
+          </li>
+
+          <li>
+            <a class="crear-cuenta" href="#"> Crear cuenta </a>
+          </li>
+        </ul>
+      </nav>
     </header>
-
-    <hr class="separador-principal">
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="main">
+      <!-- BANNER DE PRESENTACIÓN -->
+      <section class="seccion-principal">
+        <div class="contenido-principal">
+          <h1>Salas y horarios</h1>
 
-        <!-- PRESENTACION -->
-        <section class="seccion-principal">
+          <p class="subtitulo-principal">
+            Espacios para leer, estudiar y compartir
+          </p>
 
-            <div class="contenido-principal">
-                <h1>Salas y Horarios</h1>
+          <p id="saludo"></p>
 
-                <p id="saludo"></p>
+          <p>
+            En Letras de Gurabo contamos con diferentes salas para todas las
+            edades e intereses. Conoce nuestros espacios y sus horarios de
+            disponibilidad.
+          </p>
+        </div>
 
-                <p>Espacios para leer, estudiar y construir</p>
+        <div class="imagen-principal">
+          <img
+            src="../../assets/img/Biblioteca moderna con mesa de estudio.png" alt="Interior de la biblioteca">
+        </div>
+      </section>
 
-                <p>
-                    En Letras de Gurabo contamos con diferentes salas
-                    para todas las edades e intereses.
-                </p>
-            </div>
-
-        </section>
-
-        <hr class="separador-seccion">
-
-        <!-- SALAS DISPONIBLES -->
+      <!-- CONTENIDO: SALAS Y HORARIOS -->
+      <div class="contenido-layout">
+        <!-- SECCIÓN DE SALAS -->
         <section class="seccion-salas">
+          <div class="encabezado-salas">
+            <h2>Nuestras salas</h2>
 
-            <div class="encabezado-salas">
-                <h2>Nuestras salas</h2>
+            <p class="descripcion-sala">
+              Cada espacio está diseñado para ofrecerte una mejor experiencia.
+            </p>
+          </div>
+
+          <!-- CONTENEDOR DE TARJETAS -->
+          <div class="contenedor-salas">
+            <!-- SALA GENERAL -->
+            <article class="tarjeta-sala">
+              <img class="imagen-sala" src="../../assets/img/Biblioteca moderna con mesa de estudio.png" alt="Sala general de la biblioteca">
+
+              <div class="enlace-sala">
+                <img src="../../assets/img/Ícono de libro abierto verde.png" alt="">
+              </div>
+
+              <div class="contenido-sala">
+                <h3>Sala general</h3>
 
                 <p>
-                    Cada espacio esta disenado para ofrecerte
-                    una mejor experiencia.
+                  Un espacio tranquilo para la lectura, el estudio y la
+                  investigación.
                 </p>
-            </div>
 
-            <div class="contenedor-salas">
+                <ul class="etiquetas-sala">
+                  <li>Lectura</li>
+                  <li>Estudio individual</li>
+                  <li>Consulta de libros</li>
+                </ul>
+              </div>
+            </article>
 
-                <!-- SALA GENERAL -->
-                <article class="tarjeta-sala">
+            <!-- SALA INFANTIL -->
+            <article class="tarjeta-sala">
+              <img class="imagen-sala" src="../../assets/img/Biblioteca infantil llena de colores.png" alt="Sala infantil">
 
-                    <img
-                        class="imagen-sala"
-                        src="../../assets/img/Biblioteca moderna con mesa de estudio.png"
-                        alt="Imagen de la sala general"
-                    >
+              <div class="enlace-sala">
+                <img src="../../assets/img/Ícono minimalista de grupo de personas.png" alt="">
+              </div>
 
-                    <a class="enlace-sala" href="#"></a>
+              <div class="contenido-sala">
+                <h3>Sala infantil</h3>
 
-                    <h3>Sala general</h3>
+                <p>
+                  Un lugar cómodo y seguro donde los más pequeños pueden
+                  disfrutar de la lectura.
+                </p>
 
-                    <p>
-                        Un espacio tranquilo para la lectura,
-                        estudio e investigacion.
-                    </p>
+                <ul class="etiquetas-sala">
+                  <li>Cuentos</li>
+                  <li>Actividades infantiles</li>
+                  <li>Área de juegos</li>
+                </ul>
+              </div>
+            </article>
 
-                    <ul>
-                        <li>Lectura</li>
-                        <li>Estudio individual</li>
-                        <li>Consulta de libros</li>
-                    </ul>
+            <!-- SALA DE ESTUDIO -->
+            <article class="tarjeta-sala">
+              <img class="imagen-sala" src="../../assets/img/Biblioteca moderna entre madera y plantas.png" alt="Sala de estudio">
 
-                </article>
+              <div class="enlace-sala">
+                <img src="../../assets/img/Ícono minimalista de laptop azul marino.png" alt="">
+              </div>
 
-                <!-- SALA INFANTIL -->
-                <article class="tarjeta-sala">
+              <div class="contenido-sala">
+                <h3>Sala de estudio</h3>
 
-                    <img
-                        class="imagen-sala"
-                        src="../../assets/img/Biblioteca infantil llena de colores.png"
-                        alt="Imagen de la sala infantil"
-                    >
+                <p>
+                  Ideal para trabajar en grupo o estudiar en un espacio
+                  silencioso.
+                </p>
 
-                    <a class="enlace-sala" href="#"></a>
+                <ul class="etiquetas-sala">
+                  <li>Espacios individuales</li>
+                  <li>Trabajo en grupo</li>
+                  <li>Ambiente tranquilo</li>
+                </ul>
+              </div>
+            </article>
 
-                    <h3>Sala infantil</h3>
+            <!-- SALA DE ACTIVIDADES -->
+            <article class="tarjeta-sala">
+              <img class="imagen-sala" src="../../assets/img/Sala de Lectura y Presentaciones.png" alt="Sala de actividade">
 
-                    <p>
-                        Un lugar comodo y seguro donde los
-                        mas pequenos puedan disfrutar de la lectura.
-                    </p>
+              <div class="enlace-sala">
+                <img src="../../assets/img/icono_grupo_verde_hd_transparente.png" alt="">
+              </div>
 
-                    <ul>
-                        <li>Cuentos</li>
-                        <li>Actividades infantiles</li>
-                        <li>Area de juegos</li>
-                    </ul>
+              <div class="contenido-sala">
+                <h3>Sala de actividades</h3>
 
-                </article>
+                <p>
+                  Utilizada para talleres, charlas, presentaciones y otros
+                  eventos de la comunidad.
+                </p>
 
-                <!-- SALA DE ESTUDIO -->
-                <article class="tarjeta-sala">
-
-                    <img
-                        class="imagen-sala"
-                        src="../../assets/img/Biblioteca moderna entre madera y plantas.png"
-                        alt="Imagen de la sala de estudio"
-                    >
-
-                    <a class="enlace-sala" href="#"></a>
-
-                    <h3>Sala de estudio</h3>
-
-                    <p>
-                        Ideal para trabajo grupal o estudio individual.
-                    </p>
-
-                    <ul>
-                        <li>Trabajo individual</li>
-                        <li>Trabajo grupal</li>
-                        <li>Ambiente tranquilo</li>
-                    </ul>
-
-                </article>
-
-                <!-- SALA DE ACTIVIDADES -->
-                <article class="tarjeta-sala">
-
-                    <img
-                        class="imagen-sala"
-                        src="../../assets/img/Sala de Lectura y Presentaciones.png"
-                        alt="Imagen de la sala de actividades"
-                    >
-
-                    <a class="enlace-sala" href="#"></a>
-
-                    <h3>Sala de actividades</h3>
-
-                    <p>
-                        Utilizada para talleres, charlas, presentaciones
-                        y otros eventos de la comunidad.
-                    </p>
-
-                    <ul>
-                        <li>Talleres</li>
-                        <li>Charlas</li>
-                        <li>Eventos culturales</li>
-                    </ul>
-
-                </article>
-
-            </div>
-
+                <ul class="etiquetas-sala etiquetas-eventos">
+                  <li>Talleres</li>
+                  <li>Charlas</li>
+                  <li>Eventos culturales</li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </section>
 
-    </main>
+        <!-- PANEL LATERAL -->
+        <aside class="informacion-horarios">
+          <!-- HORARIOS DE ATENCIÓN -->
+          <article class="tarjeta-horarios">
+            <h2>
+              <img class="icono-reloj" src="../../assets/img/icono_reloj_hd_transparente.png">
 
-    <!-- INFORMACION COMPLEMENTARIA -->
-    <aside class="informacion-horarios">
+              Horarios de atención
+            </h2>
 
-        <!-- HORARIOS DE ATENCION -->
-        <article class="tarjeta-horarios">
+            <table class="tabla-horarios">
+              <tbody>
+                <tr>
+                  <td>Lunes</td>
+                  <td>8:00 a.m. - 6:00 p.m.</td>
+                </tr>
 
-            <h2>Horarios de atencion</h2>
+                <tr>
+                  <td>Martes</td>
+                  <td>8:00 a.m. - 6:00 p.m.</td>
+                </tr>
 
-            <div class="contenedor-tabla-horarios">
+                <tr>
+                  <td>Miércoles</td>
+                  <td>8:00 a.m. - 6:00 p.m.</td>
+                </tr>
 
-                <table class="tabla-horarios">
+                <tr>
+                  <td>Jueves</td>
+                  <td>8:00 a.m. - 6:00 p.m.</td>
+                </tr>
 
-                    <thead>
-                        <tr>
-                            <th>Dia</th>
-                            <th>Apertura</th>
-                            <th>Cierre</th>
-                        </tr>
-                    </thead>
+                <tr>
+                  <td>Viernes</td>
+                  <td>8:00 a.m. - 6:00 p.m.</td>
+                </tr>
 
-                    <tbody>
-                        <tr>
-                            <td>Lunes</td>
-                            <td>8:00 a.m.</td>
-                            <td>6:00 p.m.</td>
-                        </tr>
+                <tr>
+                  <td>Sábado</td>
+                  <td>9:00 a.m. - 4:00 p.m.</td>
+                </tr>
 
-                        <tr>
-                            <td>Martes</td>
-                            <td>8:00 a.m.</td>
-                            <td>6:00 p.m.</td>
-                        </tr>
+                <tr>
+                  <td>Domingo</td>
+                  <td class="cerrado">Cerrado</td>
+                </tr>
+              </tbody>
+            </table>
 
-                        <tr>
-                            <td>Miercoles</td>
-                            <td>8:00 a.m.</td>
-                            <td>6:00 p.m.</td>
-                        </tr>
+            <!-- NOTA DE HORARIOS -->
+            <div class="nota-horarios">
+              <img src="../../assets/img/icono_calendario_hd_transparente.png" class="icono-calendario">
 
-                        <tr>
-                            <td>Jueves</td>
-                            <td>8:00 a.m.</td>
-                            <td>6:00 p.m.</td>
-                        </tr>
-
-                        <tr>
-                            <td>Viernes</td>
-                            <td>8:00 a.m.</td>
-                            <td>6:00 p.m.</td>
-                        </tr>
-
-                        <tr>
-                            <td>Sabado</td>
-                            <td>9:00 a.m.</td>
-                            <td>4:00 p.m.</td>
-                        </tr>
-
-                        <tr>
-                            <td>Domingo</td>
-                            <td>Cerrado</td>
-                            <td>Cerrado</td>
-                        </tr>
-                    </tbody>
-
-                </table>
-
+              <p>
+                Los horarios pueden estar sujetos a cambios. Te recomendamos
+                estar atento a nuestras redes o comunicarte con nosotros.
+              </p>
             </div>
+          </article>
 
-        </article>
-
-        <!-- NORMAS DE USO -->
-        <article class="tarjeta-normas">
-
-            <h3>Normas de uso de las salas</h3>
+          <!-- NORMAS DE USO -->
+          <article class="tarjeta-normas">
+            <h3>
+              Normas de uso de las salas
+            </h3>
 
             <ul>
-                <li>Manten el silencio y el respeto.</li>
-                <li>Cuida el mobiliario y los libros.</li>
-                <li>Sigue las indicaciones del personal.</li>
-                <li>Las salas son de uso gratuito.</li>
-                <li>Reserva con anticipacion para actividades.</li>
+              <li>Mantén el silencio y el respeto.</li>
+              <li>Cuida el mobiliario y los libros.</li>
+              <li>Sigue las indicaciones del personal.</li>
+              <li>Las salas son de uso gratuito.</li>
+              <li>Reserva con anticipación para actividades.</li>
             </ul>
+          </article>
 
-        </article>
-        <!-- NORMAS DE USO -->
-        <article class="tarjeta-normas tarjeta-informacion">
+          <!-- MENSAJE INFORMATIVO -->
+          <article class="tarjeta-informacion">
+            <div class="icono-libro">
+              <img src="../../assets/img/Ícono de libro abierto verde.png" class="libro-abierto" alt="">
+            </div>
 
-            <h3>La lectura tambien tiene su espacio.</h3>
-
-            <p>Te esperamos en Letras de Gurabo.</p>
-
-        </article>
-
-    </aside>
+            <div>
+              <h3>La lectura también tiene su espacio.</h3>
+              <p>Te esperamos en Letras de Gurabo.</p>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
+      <div class="footer-contenido">
+        <div class="footer-identidad">
+          <a href="./index.html" class="footer-logo">
+            <img
+              src="../../assets/img/Letras de Gurabo_ Biblioteca Comunitaria.png"
+              alt="Letras de Gurabo"
+            />
+          </a>
 
-        <div class="footer-contenido">
+          <p class="footer-descripcion">
+            Un espacio para aprender, descubrir y crecer juntos en nuestra
+            comunidad.
+          </p>
 
-            <!-- IDENTIDAD -->
-            <div class="footer-identidad">
-
-                <a href="../index.html" class="footer-logo">
-                    <img
-                        src="../../assets/img/Letras de Gurabo_ Biblioteca Comunitaria.png"
-                        alt="Letras de Gurabo"
-                    >
-                </a>
-
-                <p class="footer-descripcion">
-                    Un espacio para aprender, descubrir y crecer juntos
-                    en nuestra comunidad.
-                </p>
-
-                <div class="iconos-redes-sociales">
-
-                    <a href="#">
-                        <img
-                            src="../../assets/img/Ícono de Facebook con Degradado Azul.png"
-                            alt="Facebook"
-                        >
-                    </a>
-
-                    <a href="#">
-                        <img
-                            src="../../assets/img/Ícono de Instagram en degradado vibrante.png"
-                            alt="Instagram"
-                        >
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- ENLACES -->
-            <nav class="footer-columna">
-
-                <h3>Enlaces</h3>
-
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../catalogo/catalogo.html">Catalogo</a></li>
-                    <li><a href="../salas_horarios/salas_horarios.html">Salas y horarios</a></li>
-                    <li><a href="../actividades/actividades.html">Actividades</a></li>
-                    <li><a href="../hacerse_socio/hacerse_socio.html">Hacerse socio</a></li>
-                    <li><a href="../contacto/contacto.html">Contacto</a></li>
-                </ul>
-
-            </nav>
-
-            <!-- SERVICIOS -->
-            <div class="footer-columna">
-
-                <h3>Servicios</h3>
-
-                <ul>
-                    <li><a href="../catalogo/catalogo.html">Prestamos de libros</a></li>
-                    <li><a href="../salas_horarios/salas_horarios.html">Reserva de salas</a></li>
-                    <li><a href="../actividades/actividades.html">Actividades culturales</a></li>
-                    <li><a href="../catalogo/catalogo.html">Catalogo de libros</a></li>
-                </ul>
-
-            </div>
-
-            <!-- CONTACTO -->
-            <div class="footer-columna footer-contacto">
-
-                <h3>Contacto</h3>
-
-                <address>
-                    <p>Calle principal #00</p>
-                    <p>Gurabo, Santiago, R. D.</p>
-
-                    <a href="tel:+18090000000">
-                        (809) 000-0000
-                    </a>
-
-                    <a href="mailto:biblioteca@letrasdegurabo.com">
-                        biblioteca@letrasdegurabo.com
-                    </a>
-                </address>
-
-            </div>
-
+          <div class="iconos-redes-sociales">
+            <a href="#">
+              <img
+                src="../../assets/img/Ícono de Facebook con Degradado Azul.png"
+                alt=""
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../../assets/img/Ícono de Instagram en degradado vibrante.png"
+                alt=""
+              />
+            </a>
+          </div>
         </div>
 
-        <!-- INFORMACION INFERIOR -->
-        <div class="footer-inferior">
+        <nav class="footer-columna">
+          <h3>Enlaces</h3>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./paginas/catalogo/catalogo.html">Catálogo</a></li>
+            <li>
+              <a href="./paginas/salas_horarios/salas_horarios.html"
+                >Salas y horarios</a
+              >
+            </li>
+            <li>
+              <a href="./paginas/actividades/actividades.html">Actividades</a>
+            </li>
+            <li>
+              <a href="./paginas/hacerse_socio/hacerse_socio.html"
+                >Hacerse socio</a
+              >
+            </li>
+            <li><a href="./paginas/contacto/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
 
-            <p>
-                © 2026 Letras de Gurabo. Todos los derechos reservados.
-            </p>
-
-            <div class="footer-legal">
-
-                <a href="#">Terminos y condiciones</a>
-
-                <span>|</span>
-
-                <a href="#">Politica de privacidad</a>
-
-            </div>
-
+        <div class="footer-columna">
+          <h3>Servicios</h3>
+          <ul>
+            <li>
+              <a href="./paginas/catalogo/catalogo.html">Préstamos de libros</a>
+            </li>
+            <li>
+              <a href="./paginas/salas_horarios/salas_horarios.html"
+                >Reserva de salas</a
+              >
+            </li>
+            <li>
+              <a href="./paginas/actividades/actividades.html"
+                >Actividades culturales</a
+              >
+            </li>
+            <li>
+              <a href="./paginas/catalogo/catalogo.html">Catálogo de libros</a>
+            </li>
+          </ul>
         </div>
 
+        <div class="footer-columna footer-contacto">
+          <h3>Contacto</h3>
+          <address>
+            <p>Calle principal #00</p>
+            <p>Gurabo, Santiago, R. D.</p>
+            <a href="tel:+18090000000">(809) 000-0000</a>
+            <a href="mailto:biblioteca@letrasdegurabo.com">
+              biblioteca@letrasdegurabo.com
+            </a>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-inferior">
+        <p>© 2026 Letras de Gurabo. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a href="#">Términos y condiciones</a>
+          <span>|</span>
+          <a href="#">Política de privacidad</a>
+        </div>
+      </div>
     </footer>
 
     <!-- AVISO SIN JAVASCRIPT -->
     <noscript>
-        <p class="aviso-noscript">
-            JavaScript esta desactivado. El saludo personalizado y algunas
-            funciones interactivas podrian no funcionar. Puedes seguir
-            consultando el contenido disponible de Letras de Gurabo.
-            Activa JavaScript para disfrutar de todas las funcionalidades.
-        </p>
+      <p class="aviso-noscript">
+        JavaScript está desactivado. El saludo personalizado y algunas funciones
+        interactivas podrían no funcionar.
+      </p>
     </noscript>
 
+    <!-- JAVASCRIPT -->
     <script src="../../assets/js/main.js"></script>
-
-</body>
+  </body>
 </html>
